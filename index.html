@@ -4,12 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/index.css">
   
   <title>Interactive card details form</title>
 
 </head>
 <body>
+  <main class="principal">
+    <img class="bg-1" src="./images/bg-main-mobile.png" alt="Imagem de fundo">
+      <div class="card-front">
+        <img class="card-bg" src="./images/bg-card-front.png" alt="Cartao Frente">
+        <div class="card-number">0000 0000 0000 0000 0000</div>
+        <div class="card-expiration">00/00</div>
+        <div class="card-name">Name</div>
+      </div>
+      <div class="card-back">
+        <img class="card-bg" src="./images/bg-card-back.png" alt="Cartao costas">
+        <div class="card-cvv-back">000</div>
+      </div>
+  
+    <form action="" class="formulario">
+      <label for="card-name">Cardholder Name</label>
+      <input type="text" id="card-name" placeholder="Seu nome completo" required>
 
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" placeholder="e.g 1234 5678 9123 000" required>
+
+      <label for="card-expiration">Exp.Date(MM/YY)</label>
+      <input type="text" id="card-expiration" placeholder="MM/YY" required> 
+
+      <label for="card-back-cvv">CVC</label>
+      <input type="text" id="card-back-cvv" placeholder="e.g 123" required>
+
+      <button type="submit" id="submit">Confirm</button>
+    </form>
+</main>
 </body>
 </html>
