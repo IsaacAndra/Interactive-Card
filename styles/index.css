@@ -1,1 +1,15 @@
 @import './reset.css';
+@import './cards.css';
+@import './formulario.css';
+
+:root {
+    --input-active-border-1: #6448fe;
+    --input-active-border-2: #600594;
+    --input-error: #ff5252;
+    --white: #ffffff;
+    --Light-grayish-violet: #dedddf;
+    --Dark-grayish-violet: #8e8593;
+    --Very-dark-violet: #21092f;
+    --font: 'Space Grotesk', sans-serif;
+}
+
