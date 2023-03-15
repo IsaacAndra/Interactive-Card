@@ -95,3 +95,38 @@ function validateExp(expiration) {
     }
     return '';
 }
+/*   ------------------     */
+
+/*   Validação do campo CVV     */
+
+const cvvInput = document.getElementById('card-back-cvv');
+const cvvError = document.getElementById('card-back-cvv-error');
+
+cvvInput.addEventListener('blur', () => {
+    const cvv = cvvInput.value;
+    if(validateCvv(cvv)) {
+        cvvError.textContent = validateCvv(cvv);
+        cvvInput.classList.add('erro');
+    } else {
+        cvvError.textContent = '';
+        cvvInput.classList.remove('erro');
+    }
+})
+
+
+
+
+function validateCvv(cvv) {
+    const regex = /^[0-9\s]+$/;
+
+    if(!cvv) {
+        return 'Por favor, coloque o código de segurança do seu cartao';
+    }
+    if(!regex.test(cvv)) {
+        return 'O campo deve conter apenas números';
+    }
+    if(cvv.length < 3) {
+        return 'O campo deve conter 3 dígitos';
+    }
+    return '';
+}
