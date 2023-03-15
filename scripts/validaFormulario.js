@@ -52,13 +52,46 @@ function validateNumber(number) {
     const regex = /^[0-9\s]+$/;
 
     if(!number) {
-        return 'Por favor, preencha o campo nome';
+        return 'Por favor, preencha o campo com o número do seu cartao';
     }
     if(!regex.test(number)) {
         return 'O campo nome deve conter apenas números e espaços';
     }
     if(number.length < 16) {
         return 'O campo deve conter 16 dígitos';
+    }
+    return '';
+}
+
+/*   --------------------    */
+
+/*   Validação do campo EXP.DATE     */
+
+const cardExpirationInput = document.getElementById('card-expiration');
+const cardExpirationError = document.getElementById('card-expiration-error')
+
+
+
+cardExpirationInput.addEventListener('blur', () => {
+    const expiration = cardExpirationInput.value;
+    if(validateExp(expiration)) {
+        cardExpirationError.textContent = validateExp(expiration);
+        cardExpirationInput.classList.add('erro');
+    } else {
+        cardExpirationError.textContent = '';
+        cardExpirationInput.classList.remove('erro');
+    }
+})
+
+
+function validateExp(expiration) {
+    const regex = /^(0[1-9]|1[0-2])\/(\d{2})$/;
+
+    if(!expiration) {
+        return 'Por favor, coloque a data de expiraçao do seu cartao com o caractere "/"';
+    }
+    if(!regex.test(expiration)) {
+        return 'O campo deve conter dois números do mês + "/" + 2 números do ano ';
     }
     return '';
 }
