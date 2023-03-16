@@ -2,16 +2,21 @@
 
 const nameInput = document.getElementById('card-name');
 const nameError = document.getElementById('name-error');
+const nameDisplay = document.getElementById('card-name-display');
 
-
-nameInput.addEventListener('blur', function validateForm() {
+nameInput.addEventListener('input', function validateForm() {
     const nome = nameInput.value;
+    const textoPadrao = 'Name';
     if (validateName(nome)) {
         nameError.textContent = validateName(nome);
         nameInput.classList.add('erro');
     } else {
         nameError.textContent = '';
         nameInput.classList.remove('erro');
+        nameDisplay.textContent = nome;
+    }
+    if(nome === '') {
+        nameDisplay.textContent = textoPadrao;
     }
 })
 
@@ -36,7 +41,7 @@ function validateName(nome) {
 const cardNumberInput = document.getElementById('card-number');
 const cardNumberError = document.getElementById('card-number-error');
 
-cardNumberInput.addEventListener('blur', () => {
+cardNumberInput.addEventListener('input', () => {
     const number = cardNumberInput.value;
     if (validateNumber(number)) {
         cardNumberError.textContent = validateNumber(number);
@@ -72,7 +77,7 @@ const cardExpirationError = document.getElementById('card-expiration-error')
 
 
 
-cardExpirationInput.addEventListener('blur', () => {
+cardExpirationInput.addEventListener('input', () => {
     const expiration = cardExpirationInput.value;
     if(validateExp(expiration)) {
         cardExpirationError.textContent = validateExp(expiration);
@@ -102,7 +107,7 @@ function validateExp(expiration) {
 const cvvInput = document.getElementById('card-back-cvv');
 const cvvError = document.getElementById('card-back-cvv-error');
 
-cvvInput.addEventListener('blur', () => {
+cvvInput.addEventListener('input', () => {
     const cvv = cvvInput.value;
     if(validateCvv(cvv)) {
         cvvError.textContent = validateCvv(cvv);
