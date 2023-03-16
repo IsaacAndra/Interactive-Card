@@ -4,6 +4,7 @@ const nameInput = document.getElementById('card-name');
 const nameError = document.getElementById('name-error');
 const nameDisplay = document.getElementById('card-name-display');
 
+
 nameInput.addEventListener('input', function validateForm() {
     const nome = nameInput.value;
     const textoPadrao = 'Name';
@@ -40,15 +41,21 @@ function validateName(nome) {
 
 const cardNumberInput = document.getElementById('card-number');
 const cardNumberError = document.getElementById('card-number-error');
+const cardNumberDisplay = document.getElementById('card-number-display');
 
 cardNumberInput.addEventListener('input', () => {
     const number = cardNumberInput.value;
+    const numeroPadrao = '0000 0000 0000 0000'
     if (validateNumber(number)) {
         cardNumberError.textContent = validateNumber(number);
         cardNumberInput.classList.add('erro');
     } else {
         cardNumberError.textContent = '';
         cardNumberInput.classList.remove('erro');
+        cardNumberDisplay.textContent = number;
+    }
+    if(number === '') {
+        cardNumberDisplay.textContent = numeroPadrao;
     }
 })
 
@@ -62,7 +69,7 @@ function validateNumber(number) {
     if(!regex.test(number)) {
         return 'O campo nome deve conter apenas números e espaços';
     }
-    if(number.length < 16) {
+    if(number.length < 2) {
         return 'O campo deve conter 16 dígitos';
     }
     return '';
@@ -73,18 +80,24 @@ function validateNumber(number) {
 /*   Validação do campo EXP.DATE     */
 
 const cardExpirationInput = document.getElementById('card-expiration');
-const cardExpirationError = document.getElementById('card-expiration-error')
+const cardExpirationError = document.getElementById('card-expiration-error');
+const expDisplay = document.getElementById('card-exp-display');
 
 
 
 cardExpirationInput.addEventListener('input', () => {
     const expiration = cardExpirationInput.value;
+    const expPadrao = '00/00';
     if(validateExp(expiration)) {
         cardExpirationError.textContent = validateExp(expiration);
         cardExpirationInput.classList.add('erro');
     } else {
         cardExpirationError.textContent = '';
         cardExpirationInput.classList.remove('erro');
+        expDisplay.textContent = expiration;
+    }
+    if(expiration === '') {
+        expDisplay.textContent = expPadrao;
     }
 })
 
@@ -106,15 +119,21 @@ function validateExp(expiration) {
 
 const cvvInput = document.getElementById('card-back-cvv');
 const cvvError = document.getElementById('card-back-cvv-error');
+const cvvDisplay = document.getElementById('card-cvv-display');
 
 cvvInput.addEventListener('input', () => {
     const cvv = cvvInput.value;
+    const cvvPadrao = '000'
     if(validateCvv(cvv)) {
         cvvError.textContent = validateCvv(cvv);
         cvvInput.classList.add('erro');
     } else {
         cvvError.textContent = '';
         cvvInput.classList.remove('erro');
+        cvvDisplay.textContent = cvv;
+    }
+    if(cvv === '') {
+        cvvDisplay.textContent = cvvPadrao;
     }
 })
 
