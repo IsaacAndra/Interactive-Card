@@ -17,13 +17,13 @@
     <img class="bg-1" src="./images/bg-main-mobile.png" alt="Imagem de fundo">
       <div class="card-front">
         <img class="card-bg" src="./images/bg-card-front.png" alt="Cartao Frente">
-        <div class="card-number">0000 0000 0000 0000 0000</div>
-        <div class="card-expiration">00/00</div>
-        <div class="card-name">Name</div>
+        <div class="card-number" id="card-number-display">0000 0000 0000 0000 0000</div>
+        <div class="card-expiration" id="card-exp-display">00/00</div>
+        <div class="card-name" id="card-name-display">Name</div>
       </div>
       <div class="card-back">
         <img class="card-bg" src="./images/bg-card-back.png" alt="Cartao costas">
-        <div class="card-cvv-back">000</div>
+        <div class="card-cvv-back" id="card-cvv-display">000</div>
       </div>
   
     <form action="" class="formulario">
@@ -32,7 +32,7 @@
       <span id="name-error"></span>
 
       <label for="card-number">Card Number</label>
-      <input class="erro" type="text" id="card-number" placeholder="e.g 1234 5678 9123 000" required maxlength="16">
+      <input class="erro" type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required maxlength="19">
       <span id="card-number-error"></span>
 
       <label for="card-expiration">Exp.Date(MM/YY)</label>
