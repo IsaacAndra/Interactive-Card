@@ -14,6 +14,7 @@
 </head>
 <body>
   <main class="principal">
+    <img class="bg-desktop" src="./images/bg-main-mobile.png" alt="Imagem de fundo">
     <img class="bg-1" src="./images/bg-main-mobile.png" alt="Imagem de fundo">
       <div class="card-front">
         <img class="card-bg" src="./images/bg-card-front.png" alt="Cartao Frente">
@@ -26,21 +27,21 @@
         <div class="card-cvv-back" id="card-cvv-display">000</div>
       </div>
   
-    <form action="" class="formulario">
+    <form action="form" class="formulario" id="formulario">
       <label for="card-name">Cardholder Name</label>
-      <input class="erro" type="text" id="card-name" placeholder="Seu nome completo" required>
+      <input type="text" id="card-name" placeholder="Seu nome completo" required>
       <span id="name-error"></span>
 
       <label for="card-number">Card Number</label>
-      <input class="erro" type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required maxlength="19">
+      <input type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required maxlength="19">
       <span id="card-number-error"></span>
 
       <label for="card-expiration">Exp.Date(MM/YY)</label>
-      <input class="erro" type="text" id="card-expiration" placeholder="MM/YY" required maxlength="5"> 
+      <input type="text" id="card-expiration" placeholder="MM/YY" required maxlength="5"> 
       <span id="card-expiration-error"></span>
 
       <label for="card-back-cvv">CVV</label>
-      <input class="erro" type="text" id="card-back-cvv" placeholder="e.g 123" required maxlength="3">
+      <input type="text" id="card-back-cvv" placeholder="e.g 123" required maxlength="3">
       <span id="card-back-cvv-error"></span>
 
       <button type="submit" id="submit">Confirm</button>
@@ -48,5 +49,6 @@
 </main>
 
 <script src="./scripts/validaFormulario.js"></script>
+<script src="./scripts/botao.js"></script>
 </body>
 </html>
