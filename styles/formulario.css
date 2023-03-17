@@ -18,10 +18,9 @@
     font-weight: bold;
 }
 
-.formulario input {
+input {
+    border: 1px solid;
     padding: 12px;
-    border: none;
-    border: 1px solid #dedddf;
     border-radius: 10px;
 }
 
@@ -38,4 +37,16 @@
     background: var(--Very-dark-violet);
     color: var(--white);
     font-size: 1.2em;
+}
+
+.erro{
+    border: 1px solid;
+    border-color: var(--input-error);
+}
+
+span {
+    color: var(--input-error);
+    font-weight: 500;
+    text-align: center;
+    font-size: .8rem;
 }
