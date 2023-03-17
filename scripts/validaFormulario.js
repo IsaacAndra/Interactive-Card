@@ -24,13 +24,13 @@ nameInput.addEventListener('input', function validateForm() {
 function validateName(nome) {
     const regex = /^[a-zA-Z ]+$/;
     if(!nome) {
-        return 'Por favor, preencha o campo nome';
+        return 'Please, put in the field your name';
     }
     if(!regex.test(nome)) {
-        return 'O campo nome deve conter apenas letras e espaços';
+        return 'Wrong format, letters only';
     }
     if(nome.length < 3 || nome.length > 50) {
-        return "O campo nome deve ter entre 3 e 50 caracteres";
+        return "The name field must be between 3 and 50 characters long";
     }
     return '';
    
@@ -64,13 +64,13 @@ function validateNumber(number) {
     const regex = /^[0-9\s]+$/;
 
     if(!number) {
-        return 'Por favor, preencha o campo com o número do seu cartao';
+        return 'Please, put in the fild your card number';
     }
     if(!regex.test(number)) {
-        return 'O campo nome deve conter apenas números e espaços';
+        return 'The field must only contain numbers and spaces';
     }
-    if(number.length < 2) {
-        return 'O campo deve conter 16 dígitos';
+    if(number.length < 16) {
+        return 'Field must contain 16 digits';
     }
     return '';
 }
@@ -106,10 +106,10 @@ function validateExp(expiration) {
     const regex = /^(0[1-9]|1[0-2])\/(\d{2})$/;
 
     if(!expiration) {
-        return 'Por favor, coloque a data de expiraçao do seu cartao com o caractere "/"';
+        return 'Please, enclose your card expiration date with the "/" character';
     }
     if(!regex.test(expiration)) {
-        return 'O campo deve conter dois números do mês + "/" + 2 números do ano ';
+        return 'Must contain two month numbers + "/" + 2 year numbers';
     }
     return '';
 }
@@ -144,13 +144,13 @@ function validateCvv(cvv) {
     const regex = /^[0-9\s]+$/;
 
     if(!cvv) {
-        return 'Por favor, coloque o código de segurança do seu cartao';
+        return 'Please, enter your card security code';
     }
     if(!regex.test(cvv)) {
-        return 'O campo deve conter apenas números';
+        return 'Wrong format, numbers only';
     }
     if(cvv.length < 3) {
-        return 'O campo deve conter 3 dígitos';
+        return 'Field must contain 3 digits';
     }
     return '';
 }
