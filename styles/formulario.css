@@ -24,6 +24,10 @@ input {
     border-radius: 10px;
 }
 
+input:focus {
+    outline: none;
+}
+
 .formulario input::placeholder {
     color: #dedddf;
     font-size: 1.2em;
