@@ -29,6 +29,8 @@
 
 .card-bg{
     width: 290px;
+    box-shadow: 1px 1px 13px var(--Very-dark-violet);
+    border-radius: 14px;
 }
 
 .card-name {
@@ -103,6 +105,7 @@
 
     .card-bg {
         width: 400px;
+        box-shadow: 1px 1px 20px var(--Very-dark-violet);
     }
 
     .card-front {
@@ -203,6 +206,7 @@
 @media screen and (min-width: 2240px) {
     .card-bg {
         width: 530px;
+        box-shadow: 1px 1px 40px var(--Very-dark-violet);
     }
     .card-front {
         max-width: 300px;
