@@ -151,20 +151,52 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .card-bg {
+        width: 530px;
+    }
     .card-front {
         max-width: 300px;
         position: relative;
-        bottom: 750px;
-        left: 190px;
+        bottom: 880px;
+        left: 270px;
         z-index: 2;
     }
     
     .card-back {
         width: 300px;
         position: relative;
-        bottom:780px;
-        left: 250px;
+        bottom:920px;
+        left: 380px;
         z-index: 1;
+    }
+    .card-name {
+        width: 220px;
+        font-size: 1.2em;
+        position: relative;
+        bottom: 80px;
+        left: 12px;
+    }
+    .card-number {
+        width: 600px;
+        font-size: 2em;
+        position: relative;
+        bottom: 110px;
+        left: 12px;
+    }
+    .card-expiration {
+        width: 40px;
+        font-size: 1em;
+        position: relative;
+        bottom: 63px;
+        left: 460px;
+    }
+    
+    .card-cvv-back {
+        width: 35px;
+        font-size: 1.8em;
+        position: relative;
+        bottom: 165px;
+        left: 400px;
     }
 }
 
