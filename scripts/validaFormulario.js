@@ -69,7 +69,7 @@ function validateNumber(number) {
     if(!regex.test(number)) {
         return 'The field must only contain numbers and spaces';
     }
-    if(number.length < 16) {
+    if(number.length <= 4) {
         return 'Field must contain 16 digits';
     }
     return '';
