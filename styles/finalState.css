@@ -51,11 +51,6 @@
     .final-state {
         max-width: 500px;
         width: 90%;
-        height: 300px;
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
         position: relative;
         bottom: 1350px;
         margin-left: 1500px;

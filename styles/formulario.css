@@ -92,10 +92,6 @@ span {
         max-width: 450px;
         margin-left: 800px;
         bottom: 200px;
-        height: 60vh;
-        display: flex;
-        gap: 30px;
-        flex-direction: column;
     }
 }
 
@@ -105,9 +101,5 @@ span {
         max-width: 450px;
         margin-left: 1500px;
         bottom: 200px;
-        height: 60vh;
-        display: flex;
-        gap: 30px;
-        flex-direction: column;
     }
 }

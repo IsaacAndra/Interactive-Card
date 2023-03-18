@@ -123,16 +123,12 @@
     .card-name {
         width: 220px;
         font-size: 1.2em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 80px;
         left: 12px;
     }
     .card-number {
         font-size: 1.3em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 90px;
         left: 12px;
@@ -140,8 +136,6 @@
     .card-expiration {
         width: 40px;
         font-size: 1em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 63px;
         left: 320px;
@@ -150,8 +144,6 @@
     .card-cvv-back {
         width: 35px;
         font-size: 1.2em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 125px;
         left: 300px;
@@ -198,8 +190,6 @@
     .card-name {
         width: 220px;
         font-size: 1.2em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 80px;
         left: 12px;
@@ -207,8 +197,6 @@
     .card-number {
         width: 600px;
         font-size: 2em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 110px;
         left: 12px;
@@ -216,8 +204,6 @@
     .card-expiration {
         width: 40px;
         font-size: 1em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 63px;
         left: 460px;
@@ -226,8 +212,6 @@
     .card-cvv-back {
         width: 35px;
         font-size: 1.8em;
-        font-family: var(--font);
-        color: var(--white);
         position: relative;
         bottom: 165px;
         left: 400px;
