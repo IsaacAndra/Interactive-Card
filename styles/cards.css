@@ -121,23 +121,23 @@
         z-index: 1;
     }
     .card-name {
-        width: 220px;
+        width: 300px;
         font-size: 1.2em;
         position: relative;
-        bottom: 80px;
+        bottom: 90px;
         left: 12px;
     }
     .card-number {
         font-size: 1.3em;
         position: relative;
-        bottom: 90px;
+        bottom: 100px;
         left: 12px;
     }
     .card-expiration {
         width: 40px;
         font-size: 1em;
         position: relative;
-        bottom: 63px;
+        bottom: 73px;
         left: 320px;
     }
     
@@ -170,10 +170,10 @@
         z-index: 1;
     }
     .card-name {
-        width: 220px;
+        width: 350px;
         font-size: 1.2em;
         position: relative;
-        bottom: 80px;
+        bottom: 90px;
         left: 12px;
     }
     .card-number {
@@ -187,7 +187,7 @@
         width: 40px;
         font-size: 1em;
         position: relative;
-        bottom: 63px;
+        bottom: 73px;
         left: 460px;
     }
     
@@ -220,10 +220,10 @@
         z-index: 1;
     }
     .card-name {
-        width: 220px;
+        width: 300px;
         font-size: 1.2em;
         position: relative;
-        bottom: 80px;
+        bottom: 90px;
         left: 12px;
     }
     .card-number {
@@ -237,7 +237,7 @@
         width: 40px;
         font-size: 1em;
         position: relative;
-        bottom: 63px;
+        bottom: 73px;
         left: 460px;
     }
     

@@ -49,11 +49,12 @@
 
 @media screen and (min-width: 1024px) {
     .final-state {
-        max-width: 500px;
-        width: 90%;
+        max-width: 4000px;
+        margin-left: 320px ;
+        width: 100%;
         position: relative;
         bottom: 1350px;
-        margin-left: 1500px;
+        
     }
 
     .final-state button {
