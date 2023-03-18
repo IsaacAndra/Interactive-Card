@@ -69,3 +69,167 @@
     bottom: 90px;
     left: 230px;
 }
+
+@media screen and (min-width: 768px) {
+    .bg-1 {
+        height: 70%;
+    }
+    .card-front {
+        max-width: 300px;
+        position: relative;
+        bottom: 105px;
+        left: 200px;
+        z-index: 2;
+    }
+    
+    .card-back {
+        width: 300px;
+        position: relative;
+        bottom: 400px;
+        left: 250px;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bg-1 {
+        display: none;
+    }
+    .bg-desktop {
+        display: block;
+        max-width: 35%;
+        height: 100vh;
+    }
+
+    .card-bg {
+        width: 400px;
+    }
+
+    .card-front {
+        max-width: 300px;
+        position: relative;
+        bottom: 900px;
+        left: 50px;
+        z-index: 2;
+    }
+    
+    .card-back {
+        width: 300px;
+        position: relative;
+        bottom:930px;
+        left: 100px;
+        z-index: 1;
+    }
+    .card-name {
+        width: 220px;
+        font-size: 1.2em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 80px;
+        left: 12px;
+    }
+    .card-number {
+        font-size: 1.3em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 90px;
+        left: 12px;
+    }
+    .card-expiration {
+        width: 40px;
+        font-size: 1em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 63px;
+        left: 320px;
+    }
+    
+    .card-cvv-back {
+        width: 35px;
+        font-size: 1.2em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 125px;
+        left: 300px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card-front {
+        max-width: 300px;
+        position: relative;
+        bottom: 750px;
+        left: 190px;
+        z-index: 2;
+    }
+    
+    .card-back {
+        width: 300px;
+        position: relative;
+        bottom:780px;
+        left: 250px;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 2240px) {
+    .card-bg {
+        width: 530px;
+    }
+    .card-front {
+        max-width: 300px;
+        position: relative;
+        bottom: 880px;
+        left: 470px;
+        z-index: 2;
+    }
+    
+    .card-back {
+        width: 300px;
+        position: relative;
+        bottom:920px;
+        left: 590px;
+        z-index: 1;
+    }
+    .card-name {
+        width: 220px;
+        font-size: 1.2em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 80px;
+        left: 12px;
+    }
+    .card-number {
+        width: 600px;
+        font-size: 2em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 110px;
+        left: 12px;
+    }
+    .card-expiration {
+        width: 40px;
+        font-size: 1em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 63px;
+        left: 460px;
+    }
+    
+    .card-cvv-back {
+        width: 35px;
+        font-size: 1.8em;
+        font-family: var(--font);
+        color: var(--white);
+        position: relative;
+        bottom: 165px;
+        left: 400px;
+    }
+}
