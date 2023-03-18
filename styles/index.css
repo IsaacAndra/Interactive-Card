@@ -1,6 +1,7 @@
 @import './reset.css';
 @import './cards.css';
 @import './formulario.css';
+@import './finalState.css';
 
 :root {
     --input-active-border-1: #6448fe;
