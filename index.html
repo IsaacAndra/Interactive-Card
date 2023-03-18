@@ -36,26 +36,27 @@
         <button type="submit" id="submitState">Confirm</button>
       </div>
   
-    <form action="form" class="formulario" id="formulario">
-      <label for="card-name">Cardholder Name</label>
-      <input type="text" id="card-name" placeholder="Seu nome completo" required>
-      <span id="name-error"></span>
-
-      <label for="card-number">Card Number</label>
-      <input type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required>
-      <span id="card-number-error"></span>
-
-      <label for="card-expiration">Exp.Date(MM/YY)</label>
-      <input type="text" id="card-expiration" placeholder="MM/YY" required maxlength="5"> 
-      <span id="card-expiration-error"></span>
-
-      <label for="card-back-cvv">CVV</label>
-      <input type="text" id="card-back-cvv" placeholder="e.g 123" required maxlength="3">
-      <span id="card-back-cvv-error"></span>
-
-      <button type="submit" id="submit">Confirm</button>
-    </form>
+   
 </main>
+<form action="form" class="formulario" id="formulario">
+  <label for="card-name">Cardholder Name</label>
+  <input type="text" id="card-name" placeholder="Seu nome completo" required>
+  <span id="name-error"></span>
+
+  <label for="card-number">Card Number</label>
+  <input type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required maxlength="19">
+  <span id="card-number-error"></span>
+
+  <label for="card-expiration">Exp.Date(MM/YY)</label>
+  <input type="text" id="card-expiration" placeholder="MM/YY" required maxlength="5"> 
+  <span id="card-expiration-error"></span>
+
+  <label for="card-back-cvv">CVV</label>
+  <input type="text" id="card-back-cvv" placeholder="e.g 123" required maxlength="3">
+  <span id="card-back-cvv-error"></span>
+
+  <button type="submit" id="submit">Confirm</button>
+</form>
 
 <script src="./scripts/validaFormulario.js"></script>
 <script src="./scripts/botao.js"></script>
