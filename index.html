@@ -26,6 +26,15 @@
         <img class="card-bg" src="./images/bg-card-back.png" alt="Cartao costas">
         <div class="card-cvv-back" id="card-cvv-display">000</div>
       </div>
+
+      <div class="final-state" id="final-state">
+        <div class="check-circle">
+          <img src="./images/icons8-selecionado.svg" alt="check">
+        </div>
+        <h1 class="final-state-titulo">Thank You</h1>
+        <p class="final-state-texto">We've added your card details</p>
+        <button type="submit" id="submitState">Confirm</button>
+      </div>
   
     <form action="form" class="formulario" id="formulario">
       <label for="card-name">Cardholder Name</label>
@@ -33,7 +42,7 @@
       <span id="name-error"></span>
 
       <label for="card-number">Card Number</label>
-      <input type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required maxlength="19">
+      <input type="text" id="card-number" placeholder="e.g 1234 5678 9123 0000" required>
       <span id="card-number-error"></span>
 
       <label for="card-expiration">Exp.Date(MM/YY)</label>
@@ -50,5 +59,6 @@
 
 <script src="./scripts/validaFormulario.js"></script>
 <script src="./scripts/botao.js"></script>
+<script src="./scripts/botaoState.js"></script>
 </body>
 </html>
