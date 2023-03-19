@@ -111,7 +111,7 @@
     .card-front {
         max-width: 300px;
         position: relative;
-        bottom: 900px;
+        bottom: 700px;
         left: 50px;
         z-index: 2;
     }
@@ -119,7 +119,7 @@
     .card-back {
         width: 300px;
         position: relative;
-        bottom:930px;
+        bottom:730px;
         left: 100px;
         z-index: 1;
     }
@@ -160,7 +160,7 @@
     .card-front {
         max-width: 300px;
         position: relative;
-        bottom: 880px;
+        bottom: 780px;
         left: 270px;
         z-index: 2;
     }
@@ -168,7 +168,7 @@
     .card-back {
         width: 300px;
         position: relative;
-        bottom:920px;
+        bottom:820px;
         left: 380px;
         z-index: 1;
     }
