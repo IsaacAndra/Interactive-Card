@@ -17,7 +17,7 @@ Esta é uma página interativa ao usuário, permitindo que o usuário preencha o
 3. Preencha o campo NUMBER apenas com números com espaçamento a cada 4 números.
 4. Preencha o campo EXPIRATION com uma data e uma '/' entre as datas.
 5. Preencha o campo CVV com um codígo de segurança de 3 números.
-6. Clique no botão 'Continuar'
+6. Clique no botão 'Continuar'.
 
 PS: Este projeto foi desenvolvido para portifólio, qualquer dado informado nos campos, não serão salvos em bancos de dados.
 
